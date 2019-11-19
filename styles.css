@@ -1,6 +1,11 @@
 *{
     margin:0;
-    font-size:25px;
+}
+
+body{
+    font-size:14px;
+    font-family:'Roboto Condensed', sans-serif;
+    color:#212121;
 }
 
 header{
@@ -31,7 +36,7 @@ header{
 }
 
 .logo{
-    height:90%;
+    height:80%;
     width:auto;
     align-self:center;
 }
@@ -46,6 +51,7 @@ nav ul{
     justify-content:flex-end;
     align-items:flex-end;
     list-style:none;
+    font-size:1.8em;
 }
 
 nav ul li{
@@ -101,6 +107,93 @@ nav ul li a{
     background-image:url(./images/Homepage-Banner.jpg);
     background-size:cover;
     background-position:center;
+}
+
+.gigs{
+    width:100%;
+    min-height:500px;
+    display:flex;
+    flex-direction:column;
+    justify-content:center;
+    align-items:center;
+}
+
+.gigs h1{
+    font-size:3.5em;
+    font-weight:300;
+}
+
+.gig-posts{
+    width:100%;
+    min-height:300px;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+}
+
+.third-column{
+    width:33%;
+    height:100%;
+    display:flex;
+    justify-content:center;
+}
+
+.gig-post{
+    background-color:#eee;
+    min-height:200px;
+    width:95%;
+    border-radius:5px;
+    text-align:center;
+    display:flex;
+    flex-direction:column;
+    align-items:center;
+    justify-content:center;
+    border:5px solid #f6f6f6;
+}
+
+.gig-post h2{
+    font-size:2.2em;
+    margin:0 0 8px 0;
+    font-weight:300;
+}
+
+.gig-post p{
+    margin:8px 0 8px 0;
+}
+
+.glyphicon{
+    font-size:25px;
+}
+
+.icon{
+    color:#980401;
+    font-size:1.8em;
+    margin:8px 3px;
+}
+
+.icon:hover{
+    color:#770100;
+    transition:0.2s ease;
+}
+
+.btn{
+    min-height:50px;
+    min-width:150px;
+    border-radius:5px;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    background-color:#980401;
+    font-family:'Oswald', sans-serif;
+    font-size:1.4em;
+    font-weight:300;
+    text-decoration:none;
+    color:#fff;
+}
+
+.btn:hover{
+    background-color:#770100;
+    transition:0.2s ease;
 }
 
 @media screen and (max-width:1000px){
