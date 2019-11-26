@@ -8,6 +8,23 @@ body{
     color:#212121;
 }
 
+h1{
+    font-size:3.5em;
+    font-weight:300;
+}
+
+h2{
+    font-size:2.2em;
+}
+
+h3{
+    font-size:1.9em;
+}
+
+p{
+    font-size:1.1em;
+}
+
 header{
     width:100%;
     height:120px;
@@ -51,7 +68,7 @@ nav ul{
     justify-content:flex-end;
     align-items:flex-end;
     list-style:none;
-    font-size:1.8em;
+    font-size:1.2em;
 }
 
 nav ul li{
@@ -68,6 +85,7 @@ nav ul li{
 nav ul li:hover{
     background-color:#980401;
     cursor:pointer;
+    transition:0.2s;
 }
 
 nav ul li a{
@@ -84,17 +102,22 @@ nav ul li a{
     right:22px;
     top:37px;
     border:1px solid transparent;
+    transition: 0.2s;
 }
 .mobile-menu:hover{
     cursor:pointer;
-    border:1px solid #980401;
+}
+
+.mobile-menu:hover .mobile-bar{
+    background-color:#980401;
+    transition:0.2s;
 }
 
 .mobile-bar{
     height:4px;
     width:100%;
     border-radius:2px;
-    background-color:#980401;
+    background-color:#fff;
 }
 
 .active{
@@ -111,19 +134,15 @@ nav ul li a{
 
 .gigs{
     width:100%;
-    min-height:500px;
+    min-height:400px;
     display:flex;
     flex-direction:column;
-    justify-content:center;
+    justify-content:space-between;
     align-items:center;
+    padding:70px 0;
 }
 
-.gigs h1{
-    font-size:3.5em;
-    font-weight:300;
-}
-
-.gig-posts{
+.gig-music-posts{
     width:100%;
     min-height:300px;
     display:flex;
@@ -152,17 +171,12 @@ nav ul li a{
 }
 
 .gig-post h2{
-    font-size:2.2em;
     margin:0 0 8px 0;
     font-weight:300;
 }
 
 .gig-post p{
     margin:8px 0 8px 0;
-}
-
-.glyphicon{
-    font-size:25px;
 }
 
 .icon{
@@ -194,6 +208,77 @@ nav ul li a{
 .btn:hover{
     background-color:#770100;
     transition:0.2s ease;
+}
+
+.music{
+    width:100%;
+    min-height:450px;
+    display:flex;
+    flex-direction:column;
+    justify-content:space-between;
+    align-items:center;
+    background-color:#212121;
+    color:#fff;
+    padding:70px 0;
+}
+
+.music-post{
+    width:90%;
+    height:100%;
+    display:flex;
+    flex-direction:column;
+    justify-content:center;
+    align-items:center;
+    font-family:'Oswald', sans-serif;
+    font-weight:300;
+}
+
+.music-post h2{
+    font-weight:inherit;
+}
+
+.music-post iframe{
+    height:150px;
+    width:100%;
+    border:none;
+    border-radius: 5px;
+    margin:40px 0;
+}
+
+.music-post p{
+    font-size:1.3em;
+}
+
+.contact{
+    min-height:300px;
+    display:flex;
+    align-items: center;
+    justify-content: center;;
+    color:#fff;
+    background-color: #980401;
+}
+
+.contact h3{
+    width:35%;
+    margin-right:30px;
+}
+
+.contact-details{
+    width:35%;
+    display:flex;
+    flex-direction:column;
+    margin-left:30px;
+}
+
+.contact-details .icon,a{
+    color:#fff;
+    font-size:1.5em;
+    margin:5px 0;
+    text-decoration:none;
+}
+
+.contact-details .icon{
+    margin-right:30px;
 }
 
 @media screen and (max-width:1000px){
